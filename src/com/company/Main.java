@@ -47,11 +47,6 @@ public class Main {
             System.out.println("answer: " + answer.getBytes().length);
             System.out.println("to hex " + ExtensionsKt.fromByteArrayToHexString(answer.getBytes()));
 
-            byte r[] = answer.getData();
-            for (int i = 0; i < r.length; i++)
-                System.out.print((char) r[i]);
-            System.out.println();
-
             // Disconnect the card
             card.disconnect(false);
         } catch (Exception e) {
